@@ -1,5 +1,6 @@
-import { Component } from 'react';
-import { signUp } from '../utilities/users-service';
+import { Component } from "react";
+import { signUp } from '../../utilities/users-service';
+
 
 export default class SignUpForm extends Component {
   state = {
@@ -10,7 +11,6 @@ export default class SignUpForm extends Component {
     error: ''
   };
 
-  // The object passed to setState is merged with the current state object
   handleChange = (evt) => {
     this.setState({
       [evt.target.name]: evt.target.value,
@@ -36,6 +36,9 @@ export default class SignUpForm extends Component {
     }
   };
 
+  // We must override the render method
+  // The render method is the equivalent to a function-based component
+  // (its job is to return the UI)
   render() {
     const disable = this.state.password !== this.state.confirm;
     return (
