@@ -3,7 +3,7 @@ import CardImage from "./CardImage";
 
 export default function Card(props) {
   return (
-    <div className="card" style={{ width: "18rem" }}>
+    <div className="card">
       <CardImage image={props.image} />
       <CardBody name={props.name} text={props.price} />
     </div>

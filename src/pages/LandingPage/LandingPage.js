@@ -1,5 +1,6 @@
 import Card from "../../components/Card/Card";
 import styles from "./LandingPage.module.css"
+import "./styles.css";
 
 import cardsArr from "../../data"
 
