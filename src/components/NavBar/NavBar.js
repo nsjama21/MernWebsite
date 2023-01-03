@@ -15,6 +15,8 @@ export default function NavBar({ name, setUser }) {
   return (
     <div className={styles.NavBar}>
       <div className={styles.NavBar}>
+        <Link to="/">Landing Page</Link>
+        &nbsp; | &nbsp;
         <Link to="/orders">Order History</Link>
         &nbsp; | &nbsp;
         <Link to="/orders/new">New Order</Link>
