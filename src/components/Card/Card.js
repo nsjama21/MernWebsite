@@ -5,7 +5,7 @@ export default function Card(props) {
   return (
     <div className="card">
       <CardImage image={props.image} />
-      <CardBody name={props.name} text={props.price} />
+      <CardBody name={props.name} price={props.price} />
     </div>
   );
 }
